@@ -1,0 +1,11 @@
+:root{
+    --DarkBlue: #0B0C10;
+    --GrayishBlue: #1F2833;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
