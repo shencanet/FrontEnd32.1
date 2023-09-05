@@ -17,24 +17,46 @@
 
 body{
     font-family: Inter;
-    background-color: var(--DarkBlue);
-    color: white;
+    background-color: white;
+    color: var(--DarkBlue);
     font-size: 18px;
     line-height: 1.5;
 }
 
 .image-container{
-    border: 1px solid red;
+
     width: 327px;
     height: 308px;
     background-image: url(./images/pattern-bg.svg);
     background-size: contain;
     text-align: center;
     padding-top: 30px;
+    margin: 24px auto 0;
+    position: relative;
     & .image{
         width: 80%;
         border-radius: 4px;
-        object-fit: cover;
+
+    }
+
+    & .arrows-container{
+
+        background-color: white;
+        width: 80px;
+        height: 40px;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: absolute;
+        left: 0 ;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px;
+
+
     }
 
 
