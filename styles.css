@@ -59,4 +59,11 @@ body {
 
 .text-container {
   border: 5px solid red;
+  margin-top: 25px;
+  & .quote {
+    border: 2px solid green;
+    width: 60px;
+    margin: 0 auto;
+  }
+
 }
