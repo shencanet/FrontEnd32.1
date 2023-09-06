@@ -1,75 +1,62 @@
-:root{
-    --DarkBlue: #0B0C10;
-    --GrayishBlue: #1F2833;
-
+:root {
+  --DarkBlue: #0b0c10;
+  --GrayishBlue: #1f2833;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family:Inter;
-    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: Inter;
+  src: url(./fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
-body{
-    font-family: Inter;
+body {
+  font-family: Inter;
+  background-color: white;
+  color: var(--DarkBlue);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.image-container {
+  width: 327px;
+  height: 308px;
+  background-image: url(./images/pattern-bg.svg);
+  background-size: contain;
+  text-align: center;
+  padding-top: 30px;
+  margin: 24px auto 0;
+  position: relative;
+  & .image {
+    width: 80%;
+    border-radius: 4px;
+  }
+
+  & .arrows-container {
     background-color: white;
-    color: var(--DarkBlue);
-    font-size: 18px;
-    line-height: 1.5;
+    width: 80px;
+    height: 40px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px;
+    & .arrow {
+      cursor: pointer;
+    }
+  }
 }
 
-.image-container{
-
-    width: 327px;
-    height: 308px;
-    background-image: url(./images/pattern-bg.svg);
-    background-size: contain;
-    text-align: center;
-    padding-top: 30px;
-    margin: 24px auto 0;
-    position: relative;
-    & .image{
-        width: 80%;
-        border-radius: 4px;
-
-    }
-
-    & .arrows-container{
-
-        background-color: white;
-        width: 80px;
-        height: 40px;
-        border-radius: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 15px;
-        position: absolute;
-        left: 0 ;
-        right: 0;
-        bottom: 0;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px;
-        & .arrow{
-            cursor: pointer;
-
-        }
-
-
-    }
-
-
-
-
-
-}
-
-.text-container{
-    border: 5px solid red;
-
+.text-container {
+  border: 5px solid red;
 }
