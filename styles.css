@@ -72,6 +72,9 @@ body {
   }
   & .user-Testimonial {
     border: 1px solid red;
+    witdh: 100%;
+    margin: 0 auto 19px;
+    
   }
   
 }
