@@ -82,8 +82,16 @@ body {
   .user-details {
     & .user-name,
     .user-degree {
+      font-size: 0.9375rem;
+      text-align: center;
+    }
 
-      
+    .user-name {
+      color: var(--DarkBlue);
+    }
+
+    .user-degree {
+      color: var(--GrayishBlue);
     }
   }
 }
