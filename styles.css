@@ -71,7 +71,6 @@ body {
     margin: 0 auto;
   }
   & .user-Testimonial {
-
     width: 311px;
     margin: 0 auto 19px;
     font-size: 1.125rem;
@@ -79,9 +78,12 @@ body {
     text-align: center;
     color: var(--DarkBlue);
     font-weight: 300;
-    
-
-
   }
-  
+  .user-details {
+    & .user-name,
+    .user-degree {
+
+      
+    }
+  }
 }
