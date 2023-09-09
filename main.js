@@ -20,16 +20,27 @@ const users = [
   },
 ];
  let imageIndex = 0; 
+
 prevbtn.addEventListener("click", () => {
   console.log(imageIndex);
+
+if(imageIndex === 0){
+  imageIndex = users.length - 1;
+  console.log(imageIndex);  
+}
+else{
   imageIndex--
+}
 
   userImg.setAttribute("src", users[imageIndex].imageUrl);
 });
 
+
+
 nextbtn.addEventListener("click", () => {
   if(imageIndex === users.length - 1){
     imageIndex = 0;
+
     console.log(imageIndex);
   
 
