@@ -94,9 +94,53 @@ body{
   }
 }
 
-@media (min-width: 769px){
-  body{
-    background-color: red;
+@media (min-width: 1024px) {
+  .user-Testimonial{
+    border: 3px solid red;
+    width: 1297px;
+    height: 665px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px auto 0;
+    position: relative;
   }
+  .image-container{
+    border: 3px solid blue;
+    width: 702px;
+    height: 665px;
+    padding-top: 62px;
+    margin: 0;
 
+    & .arrows-container{
+      border: 3px solid green;
+      left: 140px;
+      margin: unset;
+    }
+  }
+  .text-container{
+    border: 3px solid yellow;
+    width: 635px;
+    height: 354px;
+    position: absolute;
+    padding-top: 65px;
+    left: 90px;
+    top: 130px;
+    & .quotes{
+      width: 120px;
+      height: 100px;
+      margin: 0;
+      left: 86px;
+    }
+    & .user-Testimonial{
+      font-size: 2rem;
+      line-height: 2.75rem;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    & .user-details{
+      display: flex;
+      gap: 10px;
+    }
+  }
 }
