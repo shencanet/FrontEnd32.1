@@ -95,64 +95,73 @@ body{
 }
 
 footer{
-  border: 3px solid purple;
+
   height: 72px;
   width: 285px;
   background-image: url(./images/pattern-curve.svg);
   background-size: cover;
   position: absolute;
   bottom: 0;
-  
+
 }
 
 
 @media (min-width: 768px) {
-  .user-Testimonial{
-    border: 3px solid red;
-    width: 1297px;
-    height: 665px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 50px auto 0;
-    position: relative;
-  }
   .image-container{
-    border: 3px solid blue;
-    width: 702px;
-    height: 665px;
-    padding-top: 62px;
-    margin: 0;
 
+    width: 552px;
+    height: 515px;
+    padding-top: 44px;
     & .arrows-container{
-      border: 3px solid green;
-      left: 140px;
-      margin: unset;
+      width: 112px;
+      height: 56px;
+
+      padding: 0 24px;
+
     }
+
   }
+
   .text-container{
-    border: 3px solid yellow;
-    width: 635px;
-    height: 354px;
-    position: absolute;
-    padding-top: 65px;
-    left: 90px;
-    top: 130px;
+
+    font-size: 1.6rem;
+
+
     & .quotes{
-      width: 120px;
-      height: 100px;
-      margin: 0;
-      left: 86px;
+      width: 80px;
     }
     & .user-Testimonial{
-      font-size: 2rem;
-      line-height: 2.75rem;
-      text-align: left;
-      width: 100%;
-      margin-bottom: 32px;
+
+      font-size: 1.6rem;
+      line-height: 2.0rem;
+      width: 450px;
+       
     }
     & .user-details{
-      display: flex;
-      gap: 10px;
+      & .user-name,
+      .user-degree{
+        font-size: 1.25rem;
+      }
     }
+  }
+  footer{
+
+    height: 610px;
+    width: 151px;
+  }
+
+}
+
+@media(min-width: 1024px){
+  .user-Testimonial{
+
+  }
+
+  .image-container{
+
+  }
+
+  .text-container{
+    
   }
 }
