@@ -1,22 +1,21 @@
-:root{
+:root {
   --Dark-Blue: hsl(240, 38%, 20%);
   --Grayish-Blue: hsl(240, 18%, 77%);
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "Inter";
+  src: url(./fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
-body{
-  font-family: 'Inter';
+body {
+  font-family: "Inter";
 }
 
 .image-container {
@@ -60,7 +59,7 @@ body{
   padding-top: 37px;
   position: relative;
 
-  & .quotes{
+  & .quotes {
     width: 60px;
     position: absolute;
     top: 0;
@@ -94,74 +93,92 @@ body{
   }
 }
 
-footer{
-
+footer {
   height: 72px;
   width: 285px;
   background-image: url(./images/pattern-curve.svg);
   background-size: cover;
   position: absolute;
   bottom: 0;
-
 }
 
-
 @media (min-width: 768px) {
-  .image-container{
-
+  .image-container {
     width: 552px;
     height: 515px;
     padding-top: 44px;
-    & .arrows-container{
+    & .arrows-container {
       width: 112px;
       height: 56px;
 
       padding: 0 24px;
-
     }
-
   }
 
-  .text-container{
-
+  .text-container {
     font-size: 1.6rem;
 
-
-    & .quotes{
+    & .quotes {
       width: 80px;
     }
-    & .user-Testimonial{
-
+    & .user-Testimonial {
       font-size: 1.6rem;
-      line-height: 2.0rem;
+      line-height: 2rem;
       width: 450px;
-       
     }
-    & .user-details{
+    & .user-details {
       & .user-name,
-      .user-degree{
+      .user-degree {
         font-size: 1.25rem;
       }
     }
   }
-  footer{
-
+  footer {
     height: 610px;
     width: 151px;
   }
-
 }
 
-@media(min-width: 1024px){
-  .user-Testimonial{
-
+@media (min-width: 1024px) {
+  .text-container {
+    width: 1297px;
+    height: 665px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50 auto 0;
+    position: relative;
   }
 
-  .image-container{
-
+  .image-container {
+    margin: 0;
+    width: 702px;
+    height: 100%;
+    padding-top: 62px;
+    & .arrows-container {
+      margin: unset;
+      left: 140px;
+    }
   }
 
-  .text-container{
-    
+  .text-container {
+    width: 635px;
+    height: 354px;
+    position: absolute;
+    left: 90px;
+    top: 130px;
+    & .quotes {
+      width: 120px;
+      margin: unset;
+
+      left: 86px;
+    }
+    ¬ .user-Testimonial {
+      text-align: left;
+      width: 100%;
+      font-size: 2rem;
+      line-height: 2.75rem;
+      margin: 0;
+
+    }
   }
 }
