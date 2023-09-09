@@ -1,6 +1,9 @@
 const prevbtn = document.querySelector("#prev-btn");
 const nextbtn = document.querySelector("#next-btn");
 const userImg = document.querySelector("#user-img");
+const userTestimonial = document.querySelector(".user-Testimonial");
+const userName = document.querySelector(".user-name");
+const userDegree = document.querySelector(".user-degree");
 const users = [
   {
     name: "John Tarkpor",
