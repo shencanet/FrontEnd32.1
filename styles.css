@@ -94,7 +94,19 @@ body{
   }
 }
 
-@media (min-width: 1024px) {
+footer{
+  border: 3px solid purple;
+  height: 72px;
+  width: 285px;
+  background-image: url(./images/pattern-curve.svg);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+
+@media (min-width: 768px) {
   .user-Testimonial{
     border: 3px solid red;
     width: 1297px;
