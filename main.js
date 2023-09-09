@@ -16,42 +16,46 @@ const users = [
   {
     name: "Tanya Sinclair",
     degree: "UX Engineer",
-    testomonial: `“ I’ve been interested in coding for a while but never taken the jump, until now.
+    testimonial: `“ I’ve been interested in coding for a while but never taken the jump, until now.
     I couldn’t recommend this course enough. I’m now in the job of my dreams and so
     excited about the future. ”`,
     imageUrl: "./images/image-tanya.jpg",
   },
+  {
+    name: "David Guitierrez",
+    degree: "Junior Back-end Developer",
+    testimonial: `“ If you're looking to establish a rock-solid foundation, I highly suggest enrolling in this course. The level of detail covered by the instructors is truly remarkable. I'm now brimming with confidence as I embark on my journey towards becoming a skilled professional developer.”`,
+    imageUrl: "./images/meme.png",
+  },
 ];
- let imageIndex = 0; 
+let imageIndex = 0;
 
 prevbtn.addEventListener("click", () => {
   console.log(imageIndex);
 
-if(imageIndex === 0){
-  imageIndex = users.length - 1;
-  console.log(imageIndex);  
-}
-else{
-  imageIndex--
-}
+  if (imageIndex === 0) {
+    imageIndex = users.length - 1;
+    console.log(imageIndex);
+  } else {
+    imageIndex--;
+  }
 
   userImg.setAttribute("src", users[imageIndex].imageUrl);
+  userTestimonial.textContent = users[imageIndex].testimonial;
+  userName.textContent = users[imageIndex].name;
+  userDegree.textContent = users[imageIndex].degree;
 });
 
-
-
 nextbtn.addEventListener("click", () => {
-  if(imageIndex === users.length - 1){
+  if (imageIndex === users.length - 1) {
     imageIndex = 0;
 
     console.log(imageIndex);
-  
-
-
-  }else{
-    imageIndex++
+  } else {
+    imageIndex++;
   }
   userImg.setAttribute("src", users[imageIndex].imageUrl);
-
-
+  userTestimonial.textContent = users[imageIndex].testimonial;
+  userName.textContent = users[imageIndex].name;
+  userDegree.textContent = users[imageIndex].degree;
 });
